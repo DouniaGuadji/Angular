@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()" *ngIf="employee">
+  <label for="nom">Nom:</label>
+  <input [(ngModel)]="employee.nom" name="nom" />
+
+  <label for="prenom">Prénom:</label>
+  <input [(ngModel)]="employee.prenom" name="prenom" />
+
+  <label for="email">Email:</label>
+  <input [(ngModel)]="employee.email" name="email" />
+
+  <button type="submit">Sauvegarder</button>
+</form>

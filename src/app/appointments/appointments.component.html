@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let appointment of appointments">
+      <td>{{ appointment.id }}</td>
+      <td>{{ appointment.name }}</td>
+    </tr>
+  </tbody>
+</table>

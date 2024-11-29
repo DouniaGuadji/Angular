@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let appointment of appointments">
+    {{ appointment }}
+    <button (click)="confirmAppointment(appointment.id)">Confirmer</button>
+    <button (click)="cancelAppointment(appointment.id)">Annuler</button>
+  </li>
+</ul>

@@ -1,0 +1,6 @@
+<h2>Liste des employés</h2>
+<ul>
+  <li *ngFor="let employee of employees">
+    <a [routerLink]="[employee.id]">{{ employee.nom }} {{ employee.prenom }}</a>
+  </li>
+</ul>

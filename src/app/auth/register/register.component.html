@@ -1,0 +1,13 @@
+<!-- register.component.html -->
+<form (submit)="onRegister()">
+  <label for="username">Nom d'utilisateur</label>
+  <input
+    type="text"
+    id="username"
+    [(ngModel)]="username"
+    name="username"
+    required
+  />
+
+  <button type="submit">Créer un compte</button>
+</form>

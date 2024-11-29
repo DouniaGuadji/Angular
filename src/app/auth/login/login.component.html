@@ -1,0 +1,11 @@
+<form (submit)="onLogin()">
+  <label for="username">Nom d'utilisateur :</label>
+  <input
+    type="text"
+    id="username"
+    [(ngModel)]="username"
+    name="username"
+    required
+  />
+  <button type="submit">Connexion</button>
+</form>
